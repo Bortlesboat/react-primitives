@@ -1,7 +1,14 @@
 {
-  presets: ["react-native"],
-  plugins: [
-    "transform-object-rest-spread",
+  "presets": [
+    ["@babel/preset-env", {
+      "targets": {
+        "node": "current"
+      }
+    }],
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    "@babel/plugin-transform-object-rest-spread",
     [
       "module-resolver",
       {
